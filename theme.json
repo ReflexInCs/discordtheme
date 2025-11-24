@@ -51,7 +51,7 @@
       "#1e4976"
     ],
     "CHANNELS_DEFAULT": [
-      "#7a9ab8"
+      "#e1f5fe"
     ],
     "BACKGROUND_MESSAGE_HOVER": [
       "hsla(210, 100%, 10%, 0.1)"
@@ -120,7 +120,7 @@
       "#0d2137"
     ],
     "CHANNEL_ICON": [
-      "#7a9ab8"
+      "#e1f5fe"
     ],
     "EMBED_BACKGROUND": [
       "#1a3a52"
@@ -129,7 +129,7 @@
       "#ffffff"
     ],
     "HEADER_SECONDARY": [
-      "#b3e5fc"
+      "#e1f5fe"
     ],
     "INTERACTIVE_ACTIVE": [
       "#ffffff"
@@ -141,7 +141,7 @@
       "#b3e5fc99"
     ],
     "INTERACTIVE_NORMAL": [
-      "#b3e5fc"
+      "#e1f5fe"
     ],
     "MENTION_BACKGROUND": [
       "#4fc3f733"
@@ -162,10 +162,10 @@
       "#ef5350"
     ],
     "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
-      "#7a9ab8"
+      "#e1f5fe"
     ],
     "REDESIGN_CHANNEL_NAME_TEXT": [
-      "#e3f2fd"
+      "#ffffff"
     ],
     "REDESIGN_CHAT_INPUT_BACKGROUND": [
       "#132f4c"
@@ -204,7 +204,7 @@
       "#ffffff"
     ],
     "TEXT_SECONDARY": [
-      "#b3e5fc"
+      "#e1f5fe"
     ],
     "BG_MOD_FAINT": [
       "hsla(210, 50%, 30%, 0.1)"
@@ -260,9 +260,9 @@
     "BRAND_700": "#4fc3f7",
     "BRAND_730": "#e3f2fd",
     "PLUM_1": "#e3f2fd",
-    "PLUM_10": "#7a9ab8",
-    "PLUM_11": "#7a9ab8",
-    "PLUM_13": "#7a9ab8",
+    "PLUM_10": "#e1f5fe",
+    "PLUM_11": "#e1f5fe",
+    "PLUM_13": "#e1f5fe",
     "PLUM_15": "#4fc3f7",
     "PLUM_16": "#132f4c",
     "PLUM_17": "#0a1929",
@@ -276,7 +276,7 @@
     "PLUM_3": "#4fc3f7",
     "PLUM_4": "#e3f2fd",
     "PLUM_6": "#e3f2fd",
-    "PLUM_9": "#7a9ab8",
+    "PLUM_9": "#e1f5fe",
     "PRIMARY_100": "#e3f2fd",
     "PRIMARY_200": "#e3f2fd",
     "PRIMARY_300": "#4fc3f7",
@@ -291,7 +291,7 @@
     "PRIMARY_645": "#0a1929",
     "PRIMARY_660": "#132f4c",
     "PRIMARY_700": "#132f4c",
-    "PRIMARY_730": "#7a9ab8",
+    "PRIMARY_730": "#e1f5fe",
     "PRIMARY_800": "#132f4c",
     "GREEN_260": "#66bb6a",
     "GREEN_300": "#66bb6a",
@@ -326,7 +326,7 @@
     "RED_630": "#ef5350",
     "RED_660": "#ef5350",
     "RED_700": "#ef5350",
-    "ROLE_DEFAULT": "#7a9ab8",
+    "ROLE_DEFAULT": "#e1f5fe",
     "ORANGE_260": "#ffa726",
     "ORANGE_300": "#ffa726",
     "ORANGE_330": "#ffa726",
@@ -358,7 +358,7 @@
     "YELLOW_660": "#ffee58",
     "YELLOW_700": "#ffee58",
     "WHITE_500": "#e3f2fd",
-    "WHITE_630": "#90caf9"
+    "WHITE_630": "#e1f5fe"
   },
   "plus": {
     "version": "0",
