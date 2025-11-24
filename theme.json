@@ -1,223 +1,380 @@
-/**
- * @name Midnight Vencord
- * @description A warm, earthy dark theme inspired by Gruvbox color palette
- * @author kmmiio99o.dev
- * @version 1.0.0
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-:root {
-  /* Background Colors */
-  --background-primary: #282828;
-  --background-secondary: #3c3836;
-  --background-secondary-alt: #32302f;
-  --background-tertiary: #1d2021;
-  --background-accent: #d3869b;
-  --background-floating: #3c3836;
-  --background-mobile-primary: #282828;
-  --background-mobile-secondary: #3c3836;
-  --background-modifier-hover: rgba(92, 80, 74, 0.1);
-  --background-modifier-active: rgba(92, 80, 74, 0.2);
-  --background-modifier-selected: rgba(92, 80, 74, 0.2);
-  --background-modifier-accent: rgba(92, 80, 74, 0.1);
-  --background-mentioned: rgba(211, 134, 155, 0.2);
-  --background-mentioned-hover: rgba(211, 134, 155, 0.3);
-  --background-message-hover: rgba(0, 0, 0, 0.1);
-  
-  /* Text Colors */
-  --text-normal: #d4be98;
-  --text-muted: rgba(212, 190, 152, 0.4);
-  --text-link: #d3869b;
-  --text-positive: #a8b665;
-  --text-warning: #d8a656;
-  --text-danger: #ea6962;
-  --header-primary: #d4be98;
-  --header-secondary: #a79a83;
-  --interactive-normal: #a79a83;
-  --interactive-hover: #d4be98;
-  --interactive-active: #d4be98;
-  --interactive-muted: rgba(212, 190, 152, 0.4);
-  
-  /* Channel Colors */
-  --channels-default: #a79a83;
-  --channel-icon: #a79a83;
-  --channel-text-area-placeholder: #a79a83;
-  
-  /* Scrollbar */
-  --scrollbar-thin-thumb: #504945;
-  --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: #504945;
-  --scrollbar-auto-track: transparent;
-  
-  /* Accent Colors */
-  --brand-experiment: #d3869b;
-  --brand-experiment-hover: #e692a8;
-  --brand-experiment-560: #d3869b;
-  
-  /* Status Colors */
-  --info-positive-background: #a8b665;
-  --info-positive-foreground: #282828;
-  --info-warning-background: #d8a656;
-  --info-warning-foreground: #282828;
-  --info-danger-background: #ea6962;
-  --info-danger-foreground: #282828;
-  --status-positive: #a8b665;
-  --status-warning: #d8a656;
-  --status-danger: #ea6962;
-  
-  /* Other Colors */
-  --deprecated-card-bg: #3c3836;
-  --deprecated-card-editable-bg: #32302f;
-  --deprecated-store-bg: #282828;
-  --deprecated-quickswitcher-input-background: #3c3836;
-  --deprecated-quickswitcher-input-placeholder: #a79a83;
-  --deprecated-text-input-bg: #3c3836;
-  --deprecated-text-input-border: rgba(92, 80, 74, 0.2);
-  --deprecated-text-input-border-hover: #504945;
-  --deprecated-text-input-border-disabled: #32302f;
-  --deprecated-text-input-prefix: #a79a83;
-  
-  /* Activity Colors */
-  --activity-card-background: #3c3836;
-  
-  /* Button Colors */
-  --button-secondary-background: #3c3836;
-  --button-secondary-background-hover: #504945;
-  --button-secondary-background-active: #5e505c;
-  --button-secondary-background-disabled: #32302f;
-  --button-danger-background: #ea6962;
-  --button-danger-background-hover: #f28b82;
-  --button-danger-background-active: #ea6962;
-  
-  /* Input Colors */
-  --input-background: #3c3836;
-  
-  /* Elevation & Shadows */
-  --elevation-stroke: 0 0 0 1px rgba(92, 80, 74, 0.2);
-  --elevation-low: 0 1px 0 rgba(29, 32, 33, 0.2), 0 1.5px 0 rgba(29, 32, 33, 0.05), 0 2px 0 rgba(29, 32, 33, 0.05);
-  --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
-  --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
-  
-  /* Mention Colors */
-  --mention-foreground: #d3869b;
-  --mention-background: rgba(211, 134, 155, 0.2);
-  
-  /* Font */
-  --font-primary: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* Custom Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #504945;
-  border-radius: 8px;
-  border: 4px solid #282828;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #665c54;
-}
-
-/* Chat Input */
-.channelTextArea-1VQBuV {
-  background-color: #3c3836;
-}
-
-/* Embeds */
-.embedFull-1HGV2S {
-  background-color: #433c33;
-  border-color: #d3869b;
-}
-
-/* Spoilers */
-.spoilerText-27bIiA {
-  background-color: #3c3836;
-}
-
-.spoilerText-27bIiA.hidden-3B-Rum {
-  background-color: #3c3836;
-}
-
-.spoilerText-27bIiA.hidden-3B-Rum:hover {
-  background-color: #504945;
-}
-
-/* Code Blocks */
-code {
-  background-color: #32302f;
-  border-color: #504945;
-}
-
-.hljs {
-  background-color: #32302f !important;
-}
-
-/* Member List */
-.members-3WRCEx {
-  background-color: #3c3836;
-}
-
-/* Search Results */
-.searchResult-O9NDji {
-  background-color: #3c3836;
-}
-
-.searchResult-O9NDji:hover {
-  background-color: #504945;
-}
-
-/* User Popout */
-.userPopout-2j1gM4 {
-  background-color: #3c3836;
-}
-
-/* Modal */
-.modal-3Hrb0S {
-  background-color: #282828;
-}
-
-/* Settings */
-.contentRegion-3HkfJJ,
-.sidebarRegion-1VBisG {
-  background-color: #282828;
-}
-
-.contentRegionScroller-2_GT_N {
-  background-color: #282828;
-}
-
-/* Home Icon Color */
-.homeIcon-r0w4ny path {
-  fill: #d3869b;
-}
-
-/* Folder Colors */
-.expandedFolderBackground-1kSAf6 {
-  background-color: #504945;
-}
-
-/* Typing Indicator */
-.typing-3eiiL_ {
-  background-color: #3c3836;
-}
-
-/* Reactions */
-.reaction-3vwAF2 {
-  background-color: #3c3836;
-  border-color: #504945;
-}
-
-.reaction-3vwAF2:hover {
-  background-color: #504945;
-  border-color: #665c54;
+{
+  "id": "ocean-depths-1732377600000",
+  "filename": "ocean-depths-1732377600000.json",
+  "name": "Ocean Depths",
+  "description": "A deep ocean-inspired theme with cool blues and aqua accents.",
+  "version": "1",
+  "authors": [
+    {
+      "name": "YourName",
+      "id": "000000000000000000"
+    }
+  ],
+  "semanticColors": {
+    "ANDROID_RIPPLE": [
+      "#2d5266"
+    ],
+    "CHAT_BACKGROUND": [
+      "#0a1929"
+    ],
+    "BACKGROUND_ACCENT": [
+      "#4fc3f7"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#132f4c"
+    ],
+    "BACKGROUND_MENTIONED": [
+      "#4fc3f733"
+    ],
+    "BACKGROUND_MENTIONED_HOVER": [
+      "#4fc3f74d"
+    ],
+    "SCROLLBAR_THIN_THUMB": [
+      "#1e4976"
+    ],
+    "SCROLLBAR_THIN_TRACK": [
+      "transparent"
+    ],
+    "SCROLLBAR_AUTO_THUMB": [
+      "#1e4976"
+    ],
+    "SCROLLBAR_AUTO_TRACK": [
+      "transparent"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "#132f4c"
+    ],
+    "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#132f4c"
+    ],
+    "REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED": [
+      "#1e4976"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#7a9ab8"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "hsla(210, 100%, 10%, 0.1)"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#0d2137"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#0a1929"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#132f4c"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "hsla(210, 50%, 30%, 0.1)"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "hsla(210, 50%, 30%, 0.2)"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "hsla(210, 50%, 30%, 0.1)"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "hsla(210, 50%, 30%, 0.2)"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#0a1929"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#132f4c"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#0d2137"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#001e3c"
+    ],
+    "BG_BASE_PRIMARY": [
+      "#0a1929"
+    ],
+    "BG_BACKDROP": [
+      "#000000b2"
+    ],
+    "BG_BASE_SECONDARY": [
+      "#0a1929"
+    ],
+    "BG_BASE_TERTIARY": [
+      "#132f4c"
+    ],
+    "HOME_BACKGROUND": [
+      "#132f4c"
+    ],
+    "BORDER_FAINT": [
+      "hsla(210, 50%, 30%, 0.1)"
+    ],
+    "BORDER_STRONG": [
+      "hsla(210, 50%, 30%, 0.2)"
+    ],
+    "BORDER_SUBTLE": [
+      "hsla(210, 50%, 30%, 0.2)"
+    ],
+    "CARD_SECONDARY_BG": [
+      "#132f4c"
+    ],
+    "CARD_PRIMARY_BG": [
+      "#0d2137"
+    ],
+    "CHANNEL_ICON": [
+      "#7a9ab8"
+    ],
+    "EMBED_BACKGROUND": [
+      "#1a3a52"
+    ],
+    "HEADER_PRIMARY": [
+      "#e3f2fd"
+    ],
+    "HEADER_SECONDARY": [
+      "#90caf9"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#e3f2fd"
+    ],
+    "INTERACTIVE_HOVER": [
+      "#e3f2fd"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#e3f2fd66"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#7a9ab8"
+    ],
+    "MENTION_BACKGROUND": [
+      "#4fc3f733"
+    ],
+    "MENTION_FOREGROUND": [
+      "#4fc3f7"
+    ],
+    "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
+      "#132f4c"
+    ],
+    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [
+      "#132f4c"
+    ],
+    "REDESIGN_BUTTON_SECONDARY_BORDER": [
+      "hsla(210, 50%, 30%, 0.2)"
+    ],
+    "REDESIGN_BUTTON_DANGER_BACKGROUND": [
+      "#ef5350"
+    ],
+    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
+      "#7a9ab8"
+    ],
+    "REDESIGN_CHANNEL_NAME_TEXT": [
+      "#e3f2fd"
+    ],
+    "REDESIGN_CHAT_INPUT_BACKGROUND": [
+      "#132f4c"
+    ],
+    "SPOILER_HIDDEN_BACKGROUND": [
+      "#132f4c"
+    ],
+    "STATUS_DANGER": [
+      "#ef5350"
+    ],
+    "STATUS_DANGER_BACKGROUND": [
+      "#ef5350"
+    ],
+    "STATUS_DANGER_TEXT": [
+      "#0a1929"
+    ],
+    "POLLS_NORMAL_FILL_HOVER": [
+      "#132f4c"
+    ],
+    "POLLS_NORMAL_IMAGE_BACKGROUND": [
+      "#132f4c"
+    ],
+    "POLLS_VICTOR_FILL": [
+      "#66bb6a80"
+    ],
+    "TEXT_LINK": [
+      "#4fc3f7"
+    ],
+    "TEXT_MUTED": [
+      "#e3f2fd66"
+    ],
+    "TEXT_NORMAL": [
+      "#e3f2fd"
+    ],
+    "TEXT_PRIMARY": [
+      "#bbdefb"
+    ],
+    "TEXT_SECONDARY": [
+      "#90caf9"
+    ],
+    "BG_MOD_FAINT": [
+      "hsla(210, 50%, 30%, 0.1)"
+    ],
+    "KEYBOARD": [
+      "#132f4c"
+    ],
+    "BACKGROUND_MODIFIER_ACCEPT": [
+      "#66bb6a33"
+    ],
+    "BACKGROUND_MODIFIER_ACCEPT_HOVER": [
+      "#66bb6a4d"
+    ],
+    "AUTOMOD_QUEUED_FOR_REVIEW_BACKGROUND": [
+      "#ffa72633"
+    ],
+    "AUTOMOD_QUEUED_FOR_REVIEW_BACKGROUND_HOVER": [
+      "#ffa7264d"
+    ]
+  },
+  "rawColors": {
+    "BLUE_260": "#29b6f6",
+    "BLUE_300": "#29b6f6",
+    "BLUE_330": "#29b6f6",
+    "BLUE_345": "#29b6f6",
+    "BLUE_360": "#29b6f6",
+    "BLUE_400": "#29b6f6",
+    "BLUE_430": "#29b6f6",
+    "BLUE_460": "#29b6f6",
+    "BLUE_500": "#29b6f6",
+    "BLUE_530": "#29b6f6",
+    "BLUE_560": "#29b6f6",
+    "BLUE_600": "#29b6f6",
+    "BLUE_630": "#29b6f6",
+    "BLUE_660": "#29b6f6",
+    "BLUE_700": "#29b6f6",
+    "BLACK_500": "#000000b2",
+    "BRAND_200": "#4fc3f7",
+    "BRAND_260": "#4fc3f7",
+    "BRAND_300": "#4fc3f7",
+    "BRAND_330": "#4fc3f7",
+    "BRAND_345": "#4fc3f7",
+    "BRAND_360": "#4fc3f7",
+    "BRAND_400": "#4fc3f7",
+    "BRAND_430": "#4fc3f7",
+    "BRAND_460": "#4fc3f7",
+    "BRAND_500": "#4fc3f7",
+    "BRAND_530": "#4fc3f7",
+    "BRAND_560": "#4fc3f7",
+    "BRAND_600": "#4fc3f7",
+    "BRAND_630": "#4fc3f7",
+    "BRAND_660": "#4fc3f7",
+    "BRAND_700": "#4fc3f7",
+    "BRAND_730": "#e3f2fd",
+    "PLUM_1": "#e3f2fd",
+    "PLUM_10": "#7a9ab8",
+    "PLUM_11": "#7a9ab8",
+    "PLUM_13": "#7a9ab8",
+    "PLUM_15": "#4fc3f7",
+    "PLUM_16": "#132f4c",
+    "PLUM_17": "#0a1929",
+    "PLUM_18": "#0d2137",
+    "PLUM_19": "#132f4c",
+    "PLUM_20": "#0a1929",
+    "PLUM_21": "#132f4c",
+    "PLUM_22": "#132f4c",
+    "PLUM_24": "#0a1929",
+    "PLUM_25": "#0a1929",
+    "PLUM_3": "#4fc3f7",
+    "PLUM_4": "#e3f2fd",
+    "PLUM_6": "#e3f2fd",
+    "PLUM_9": "#7a9ab8",
+    "PRIMARY_100": "#e3f2fd",
+    "PRIMARY_200": "#e3f2fd",
+    "PRIMARY_300": "#4fc3f7",
+    "PRIMARY_330": "#e3f2fd",
+    "PRIMARY_360": "#e3f2fd",
+    "PRIMARY_400": "#e3f2fd",
+    "PRIMARY_460": "#132f4c",
+    "PRIMARY_500": "#4fc3f7",
+    "PRIMARY_530": "#4fc3f7",
+    "PRIMARY_600": "#0a1929",
+    "PRIMARY_630": "#132f4c",
+    "PRIMARY_645": "#0a1929",
+    "PRIMARY_660": "#132f4c",
+    "PRIMARY_700": "#132f4c",
+    "PRIMARY_730": "#7a9ab8",
+    "PRIMARY_800": "#132f4c",
+    "GREEN_260": "#66bb6a",
+    "GREEN_300": "#66bb6a",
+    "GREEN_330": "#66bb6a",
+    "GREEN_345": "#66bb6a",
+    "GREEN_360": "#66bb6a",
+    "GREEN_400": "#66bb6a",
+    "GREEN_430": "#66bb6a",
+    "GREEN_460": "#66bb6a",
+    "GREEN_500": "#66bb6a",
+    "GREEN_530": "#66bb6a",
+    "GREEN_560": "#66bb6a",
+    "GREEN_600": "#66bb6a",
+    "GREEN_630": "#66bb6a",
+    "GREEN_660": "#66bb6a",
+    "GREEN_700": "#66bb6a",
+    "GUILD_BOOSTING_PINK": "#4fc3f7",
+    "GUILD_BOOSTING_PURPLE": "#4fc3f7",
+    "GUILD_BOOSTING_PURPLE_FOR_GRADIENTS": "#4fc3f7",
+    "RED_260": "#ef5350",
+    "RED_300": "#ef5350",
+    "RED_330": "#ef5350",
+    "RED_345": "#ef5350",
+    "RED_360": "#ef5350",
+    "RED_400": "#ef5350",
+    "RED_430": "#ef5350",
+    "RED_460": "#ef5350",
+    "RED_500": "#ef5350",
+    "RED_530": "#ef5350",
+    "RED_560": "#ef5350",
+    "RED_600": "#ef5350",
+    "RED_630": "#ef5350",
+    "RED_660": "#ef5350",
+    "RED_700": "#ef5350",
+    "ROLE_DEFAULT": "#7a9ab8",
+    "ORANGE_260": "#ffa726",
+    "ORANGE_300": "#ffa726",
+    "ORANGE_330": "#ffa726",
+    "ORANGE_345": "#ffa726",
+    "ORANGE_360": "#ffa726",
+    "ORANGE_400": "#ffa726",
+    "ORANGE_430": "#ffa726",
+    "ORANGE_460": "#ffa726",
+    "ORANGE_500": "#ffa726",
+    "ORANGE_530": "#ffa726",
+    "ORANGE_560": "#ffa726",
+    "ORANGE_600": "#ffa726",
+    "ORANGE_630": "#ffa726",
+    "ORANGE_660": "#ffa726",
+    "ORANGE_700": "#ffa726",
+    "YELLOW_260": "#ffee58",
+    "YELLOW_300": "#ffee58",
+    "YELLOW_330": "#ffee58",
+    "YELLOW_345": "#ffee58",
+    "YELLOW_360": "#ffee58",
+    "YELLOW_400": "#ffee58",
+    "YELLOW_430": "#ffee58",
+    "YELLOW_460": "#ffee58",
+    "YELLOW_500": "#ffee58",
+    "YELLOW_530": "#ffee58",
+    "YELLOW_560": "#ffee58",
+    "YELLOW_600": "#ffee58",
+    "YELLOW_630": "#ffee58",
+    "YELLOW_660": "#ffee58",
+    "YELLOW_700": "#ffee58",
+    "WHITE_500": "#e3f2fd",
+    "WHITE_630": "#90caf9"
+  },
+  "plus": {
+    "version": "0",
+    "iconPack": "rosiecord-plumpy",
+    "mentionLineColor": "#4fc3f7",
+    "customOverlays": true,
+    "icons": {
+      "trash": "#ef5350",
+      "TrashIcon": "#ef5350",
+      "TriangleExclamationPointIcon": "#ffa726",
+      "toast_copy_link": "#4fc3f7",
+      "toast_copy_message": "#e3f2fd",
+      "toast_image_saved": "#66bb6a"
+    }
+  },
+  "spec": 2,
+  "createdAt": "2024-11-23",
+  "previewUrl": "https://example.com/ocean-depths-preview.png"
 }
